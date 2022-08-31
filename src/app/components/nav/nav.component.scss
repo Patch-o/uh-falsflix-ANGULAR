@@ -1,0 +1,46 @@
+
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3em;
+}
+.navBar-search{
+    width: 10rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-right: 3rem;
+}
+p{
+    font-family: netflix;
+}
+.logo {
+    align-items: center;
+    width: clamp(50px, 80%,400px);
+}
+.logo2:hover{
+    
+    width: 140px;
+}
+@media only screen and (max-width:600px){
+    .logo{
+        display: none;
+    }
+    .logo2{
+        width: 8rem;
+        display: block;
+    }
+    .navBar-search{
+        margin-right: 0;
+    }
+}
+@media only screen and (min-width:600px){
+    .logo2{
+        display: none;
+    }
+    .logo{
+        display: block;
+    }
+}
